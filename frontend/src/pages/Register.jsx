@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react"
 import { FaUser } from "react-icons/fa"
+import {useSelector, useDispatch} from 'react-redux'
+import {toast} from 'react-toastify'
+import {useNavigate} from 'react-router-dom'
 
 function Register(){
     const [formData, setFormData] = useState({
@@ -24,7 +27,7 @@ function Register(){
         <>
         <section className="heading">
             <h1>
-                <FaUser>Register</FaUser>
+                <FaUser />Register
 
             </h1>
             <p>Please create an account</p>
